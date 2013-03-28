@@ -9,6 +9,7 @@
 
 ## 目录结构为:
 
+<pre>
 │  example.php //php文件例子
 │  readme.md   
 │  higridsql.sql //示例数据库   
@@ -21,6 +22,7 @@
 │          911006.php
 ├─js //js文件
 └─themes //CSS样式文件
+</pre>
 
 ##安装
 
