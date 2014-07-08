@@ -27,3 +27,7 @@ function higrid_csv_to_array($filename = '', $delimiter = ',')
 function higrid_demo_link($a){
 	return '<a href="/example.php?id='.$a.'"  target="_blank">'.$a.'在线演示</a>';
 }
+
+function hichart_demo_link($a){
+	return '<a href="/chart.php?id='.$a.'"  target="_blank">'.$a.'在线演示</a>';
+}
