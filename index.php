@@ -126,7 +126,7 @@ foreach($highcharts_csvdata as $k=>$x)
 
 <div class="tab-pane" id="tab4"><!-- tab4-->
 <?php
-//echo Markdown(file_get_contents(HIGRID_PATH.'CONTRIBUTING.md'));
+echo Markdown(file_get_contents(HIGRID_PATH.'CONTRIBUTING.md'));
 ?>
 </div><!-- /tab4-->
 
