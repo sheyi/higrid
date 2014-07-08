@@ -27,7 +27,7 @@
 
 #index-logo {
   text-indent: 245px;
-  background: url(http://higrid.net/include/assets/logo/50.png) no-repeat;
+  background: url(http://higrid.qiniudn.com/higrid-demo-logo.png) no-repeat;
 }
 </style>
 </head>

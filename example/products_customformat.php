@@ -99,7 +99,7 @@ function unformatTitle(cellValue, options, cellObject) {
 }
 
 function formatImage(cellValue, options, rowObject) {
-    var imageHtml = "<img src='/docs/higridpro/images/" + cellValue + "' originalValue='" + cellValue + "' />";
+    var imageHtml = "<img src='http://higrid.qiniudn.com/higrid_demo_images/" + cellValue + "' originalValue='" + cellValue + "' />";
 return imageHtml;
 }
 function unformatImage(cellValue, options, cellObject) {
@@ -107,7 +107,7 @@ function unformatImage(cellValue, options, cellObject) {
 }
 function formatRating(cellValue, options, rowObject) {
 
-	var color = (parseInt(cellValue) > 0) ? "<img src='/docs/higridpro/images/up.gif'><span style='color:red'>" : "<img src='/docs/higridpro/images/down.gif'><span style='color:green'>";
+	var color = (parseInt(cellValue) > 0) ? "<img src='http://higrid.qiniudn.com/higrid_demo_images/up.gif'><span style='color:red'>" : "<img src='http://higrid.qiniudn.com/higrid_demo_images/down.gif'><span style='color:green'>";
     var cellHtml = color + cellValue + "</span>";
     return cellHtml;
 }
