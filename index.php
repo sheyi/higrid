@@ -27,7 +27,7 @@
 
 #index-logo {
   text-indent: 245px;
-  background: url(http://higrid.net/include/assets/logo/50.png) no-repeat;
+  background: url(http://higrid.qiniudn.com/higrid-demo-logo.png) no-repeat;
 }
 </style>
 </head>
@@ -93,8 +93,31 @@ foreach($jqgrid_csvdata as $k=>$x)
 
 <!-- tab3-->
 <div class="tab-pane" id="tab3">
+
 <table class="table table-striped table-condensed table-hover">
-hello
+<tr>
+	<th>主要功能</th>
+	<th>在线演示</th>
+	<th>开放源代码</th>
+	<th>编辑</th>
+	<th>备注</th>
+</tr>
+<?php 
+$highcharts_csvdata=higrid_csv_to_array(HIGRID_PATH.'/config/hichart_demo.csv');
+foreach($highcharts_csvdata as $k=>$x)
+{
+	echo "<tr>";
+	echo "<td>".$x['demo']."</td>";
+	echo "<td>".hichart_demo_link($x['page'])."</td>";
+	echo '<td><a href="https://github.com/sheyi/higrid/blob/master/chart/'.$x['page'].'.php">源代码</a></td>';
+	echo '<td><a href="https://github.com/sheyi/higrid/edit/master/chart/'.$x['page'].'.php">编辑</a/td>';
+	echo "<td>".$x['comment']."</td>";
+	echo "</tr>";
+}
+
+
+
+?>
 </table>
 
 </div><!-- /tab3-->
@@ -103,7 +126,7 @@ hello
 
 <div class="tab-pane" id="tab4"><!-- tab4-->
 <?php
-//echo Markdown(file_get_contents(HIGRID_PATH.'CONTRIBUTING.md'));
+echo Markdown(file_get_contents(HIGRID_PATH.'CONTRIBUTING.md'));
 ?>
 </div><!-- /tab4-->
 
@@ -120,7 +143,7 @@ hello
     </footer>
 
 <!--javascript-->
-<script src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="//libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
 <!---
 //CDN公共库
 http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs	

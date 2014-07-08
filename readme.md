@@ -1,10 +1,11 @@
-﻿#higrid嗨网 v2.2 
+﻿#higrid嗨网 专业版 
 
 中文PHP在线图表, Copyright (C) http://higrid.net   
 
 
-网址：http://higrid.net/
-文档：http://higrid.net/docs/code/higridpro-quick-install.md
+网址：<http://higrid.net/>
+文档：<http://higrid.net/docs/code/higridpro-quick-install.md>
+在线演示：<http://higrid.higrid.net>
 
 
 ## 目录结构为:

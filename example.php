@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!---------------------------
-// higrid嗨网 中文PHP表格, Copyright (C) 2003 - 2011 http://higrid.net  
+// higrid嗨网 中文PHP表格, Copyright (C) 2003 - 2014 http://higrid.net  
 ---------------------------->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
@@ -23,13 +23,10 @@
 		}
 	</style>
 
-<script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="//libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/js/i18n/grid.locale-cn.js" type="text/javascript"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/js/jquery.jqGrid.min.js" type="text/javascript"></script>
 <script src="//lib.sinaapp.com/js/jquery-ui/1.10.2/jquery-ui.min.js "></script>
-
-
-
 <script type="text/javascript">
 $.jgrid.no_legacy_api = true;
 $.jgrid.useJSON = true;
@@ -50,5 +47,6 @@ $higridpro=file_exists(HIGRID_PATH.'/example/'. $ex ) ? HIGRID_PATH.'/example/'.
 include_once $higridpro;
 
 ?>
+	  </div>
 </body>
 </html>

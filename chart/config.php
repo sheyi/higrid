@@ -15,10 +15,6 @@ define('DB_USER', 'higriduser');     // 将higriduser替换成您的mysql用户�
 define('DB_PASSWORD', 'higridpass'); // 将higridpass替换成您的mysql密码
 */
 
-
-
-require(HIPATH.'../../config/higrid.php');//演示数据库设置,经过上述设置后注释本条
-require(HIPATH.'../../config/demo_higrid_pro.php');//演示数据库设置,经过上述设置后注释本条
-
+require(HIPATH.'../config/data.php');//演示数据库设置,经过上述设置后注释本条
 defined('IN_HIGRID') || define('IN_HIGRID', true); // 常量定义
 require_once(HIPATH.'../higrid/HiGrid_chart.php');// higrid php主文件
