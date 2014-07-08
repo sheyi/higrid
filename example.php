@@ -7,61 +7,48 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 <title>嗨网HiGrid演示</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="themes/redmond/jquery-ui-custom.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="themes/ui.jqgrid.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="themes/ui.multiselect.css" />
-    <style type="text">
-        html, body {
-        margin: 0;			
-    	padding: 0;
-        overflow: hidden;	
-        font-size: 75%;
-        }
-    </style>
-<script src="js/jquery.js"></script>
-    <script src="js/i18n/grid.locale-cn.js" type="text/javascript"></script>
-	<script type="text/javascript">
-	$.jgrid.no_legacy_api = true;
-	$.jgrid.useJSON = true;
-	</script>
-    <script src="js/jquery.jqGrid.min.js" type="text/javascript"></script>
-    <script src="js/jquery-ui-custom.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="//lib.sinaapp.com/js/jquery-ui/1.10.2/themes/redmond/jquery-ui.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="//cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/css/ui.jqgrid.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="//cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/plugins/ui.multiselect.css" />
+
+<!---
+	http://zh-cn.cdnjs.com/libraries/jqgrid
+-->
+	<style type="text">
+		html, body {
+		margin: 0;			
+		padding: 0;
+		overflow: hidden;	
+		font-size: 75%;
+		}
+	</style>
+
+<script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/js/i18n/grid.locale-cn.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqgrid/4.6.0/js/jquery.jqGrid.min.js" type="text/javascript"></script>
+<script src="//lib.sinaapp.com/js/jquery-ui/1.10.2/jquery-ui.min.js "></script>
+
+
+
+<script type="text/javascript">
+$.jgrid.no_legacy_api = true;
+$.jgrid.useJSON = true;
+</script>
+
 </head>
 
-  <body>
-
-      <div>
+<body>
+	  <div>
 <?php
-defined('HIGRIDPROPATH') || define('HIGRIDPROPATH', dirname(__FILE__).'/');
 //error_reporting(0); 
 
+defined('HIGRID_PATH') || define('HIGRID_PATH', str_replace('\\', '/', __DIR__) . '/');
+require(HIGRID_PATH . 'config/functions.php');
 
-$ex=rtrim(strtolower($_GET['ex']));
-
-$higridpro=file_exists(HIGRIDPROPATH.'/example/'. $ex ) ? HIGRIDPROPATH.'/example/'. $ex  :  HIGRIDPROPATH.'/example/default.php';
-
+$ex=rtrim(strtolower($_GET['id'])).'.php';
+$higridpro=file_exists(HIGRID_PATH.'/example/'. $ex ) ? HIGRID_PATH.'/example/'. $ex  :  HIGRID_PATH.'/example/default.php';
 include_once $higridpro;
 
-
-
 ?>
-      </div>
-
-<br />
-
-	<div style="border:1px dotted #F90; border-left:6px solid #F60; padding:15px; background:#FFC">
-	PHP程序由<a href="http://higrid.net/">嗨网HiGrid.net提供</a>，欢迎加个链接
-	</div>
-<div style="display:none">
-<!--HIGRID GOOGLE STATS -->
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe800be547df3ec1416d26a49a98b6f44' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript" src="http://higrid.net/include/js/statgoogle.js"  charset="utf-8"></script>
-<script src="http://s20.cnzz.com/stat.php?id=3552716&web_id=3552716" language="javascript"></script>
-</div>
-
-
 </body>
 </html>
