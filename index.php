@@ -149,13 +149,17 @@ echo Markdown(file_get_contents(HIGRID_PATH.'changelog.md'));
     </footer>
 
 <!--javascript-->
-<script src="//libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+<script src="//lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js"></script>
+<script>!window.jQuery && document.write("<script src=//libs.baidu.com/jquery/1.9.0/jquery.min.js><\/script>")</script>
+
 <!---
 //CDN公共库
 http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs	
 script type="text/javascript" src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script -->
 
-<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<!---script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script--->
+
 <!--以下是统计代码-->
 <div style="display:none">
 	<!--HIGRID GOOGLE STATS -->
