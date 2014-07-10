@@ -44,6 +44,7 @@
 <li><a href="#tab2" data-toggle="tab">网格演示</a></li>
 <li><a href="#tab3" data-toggle="tab">图形演示</a></li>
 <li><a href="#tab4" data-toggle="tab">共同参与</a></li>
+<li><a href="#tab5" data-toggle="tab">Changelog</a></li>
 </ul>
 
 
@@ -130,6 +131,11 @@ echo Markdown(file_get_contents(HIGRID_PATH.'CONTRIBUTING.md'));
 ?>
 </div><!-- /tab4-->
 
+<div class="tab-pane" id="tab5"><!-- tab5-->
+<?php
+echo Markdown(file_get_contents(HIGRID_PATH.'changelog.md'));
+?>
+</div><!-- /tab5-->
 
 </div><!-- /tab content-->
 
