@@ -1,9 +1,9 @@
 <?php
 /**
- *      Copyright (C) 2013 HiGrid Inc.
+ *      Copyright (C) 2014 HiGrid Inc.
  *		higrid嗨网 中文PHP表格, http://higrid.net
  *
- *      Released on 2013-03-27 13:16 V2.2
+ *      Released on  2014-7-13  v2.2.1
  */
 
 

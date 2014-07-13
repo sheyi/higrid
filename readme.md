@@ -32,6 +32,7 @@
 |       hichart_demo.csv //hichart演示数据
 |       higrid_demo.csv  //higrid演示数据
 |       markdownextra.php //markdown解释
+|       mysql_setting.php //数据库设置文件！！！！！必须修改
 |       
 +---example //本文件夹为嗨网演示
 |       autocomplete_toolbar.php
@@ -61,7 +62,9 @@ dos命令：`tree E:\github\github_higrid /f /a >list.txt`
 
 1. 将下载的**higrid.版本代码.tar.gz**解压缩
 1. 新建数据库,将`higridsql.sql`导入数据库
-1. 打开`example/config.php`设置数据库参数;同样设置`example/config_tree.php`;`chart/config.php`,也可以合并成一个^_^
+1. 打开`config/mysql_setting.php`设置数据库参数;
+1. 打开`example/config.php`注释掉默认的数据库配置文件`data.php`并取消下一行的注释;
+1. 与上一条同样设置`example/config_tree.php`;`chart/config.php`,也可以合并成一个^_^
 1. 将解压缩后的全部文件上传到服务器,任意目录都可
 1. 浏览器中打开该目录`index.php`查看效果
 1. 增加其他表格或图形只需模仿**example/chart**文件夹中的`php`文件修改相应参数即可
