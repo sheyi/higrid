@@ -1,6 +1,14 @@
+**2014-07-13 13:47:10 +0500** she yi [view commit &bull;](http://github.com/sheyi/higrid/commit/763d9cd6f6fafadb7f1cbd37d64e46d4d4a9298b) 
+
+	*   improve 优化数据库设置，更新例子中的版本状态，预备升级为v2.2.1 (dev)   
+
+**2014-07-11 20:03:19 +0500** sheyi dell [view commit &bull;](http://github.com/sheyi/higrid/commit/63c7d521c452b41be0bc58125676b0e1c0f67806) 
+
+	*   update: changelog update   
+
 **2014-07-11 19:57:52 +0500** sheyi dell [view commit &bull;](http://github.com/sheyi/higrid/commit/ccedb15df21a5f550461d44321481c84eaafe23b) 
 
-	*   improve 完善readme.md，更新列表和使用简要说明，增加api (HEAD, dev)   
+	*   improve 完善readme.md，更新列表和使用简要说明，增加api   
 
 **2014-07-10 19:20:14 +0500** sheyi dell [view commit &bull;](http://github.com/sheyi/higrid/commit/536deb70e67a01a9461e4397d1fbcd7a9b6c78db) 
 
