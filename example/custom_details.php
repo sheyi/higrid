@@ -1,9 +1,9 @@
 <?php
 /**
- *      Copyright (C) 2013 HiGrid Inc.
+ *      Copyright (C) 2014 HiGrid Inc.
  *		higrid嗨网 中文PHP表格, http://higrid.net
  *
- *      Released on 2013-03-27 13:16 V2.2
+ *      Released on  2014-7-13  v2.2.1
  */
 
 
@@ -24,7 +24,7 @@ $qres = hiGridDB::query($connhigrid, $SQL);
 $result = hiGridDB::fetch_assoc($qres,$connhigrid);
 $s = "<table><tbody>";
 $s .= "<tr><td><b>First Name</b></td><td>".$result["FirstName"]."</td>";
-$s .= "<td rowspan='9' valign='top'><img src='images/".trim($result["EmployeeID"]).".jpg'/></td></tr>";
+$s .= "<td rowspan='9' valign='top'><img src='http://higrid.qiniudn.com/higrid_demo_images/".trim($result["EmployeeID"]).".jpg'/></td></tr>";
 $s .= "<tr><td><b>Last Name</b></td><td>".$result["LastName"]."</td></tr>";
 $s .= "<tr><td><b>Title</b></td><td>".$result["Title"]."</td></tr>";
 $s .= "<tr><td><b>Title of Courtesy</b></td><td>".$result["TitleOfCourtesy"]."</td></tr>";
