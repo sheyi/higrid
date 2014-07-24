@@ -1,6 +1,18 @@
+**2014-07-24 14:19:07 +0500** she yi [view commit &bull;](http://github.com/sheyi/higrid/commit/10a4157832f739262eb3bcae7e98d1b0e5e9094d) 
+
+	*   Improve 演示索引表示新演示 (dev)   
+
+**2014-07-24 11:08:27 +0500** she yi [view commit &bull;](http://github.com/sheyi/higrid/commit/65de2a9431d49c8381b6ffb9fa258515de6b659f) 
+
+	*   New 增加数据导出pdf演示   
+
+**2014-07-13 13:57:53 +0500** she yi [view commit &bull;](http://github.com/sheyi/higrid/commit/3a3ce462dc3a0aee612385d4d18927a9782e240c) 
+
+	*   update 合并分支，更新changelog (v2.2.1, sf/master, origin/master, origin/HEAD)   
+
 **2014-07-13 13:47:10 +0500** she yi [view commit &bull;](http://github.com/sheyi/higrid/commit/763d9cd6f6fafadb7f1cbd37d64e46d4d4a9298b) 
 
-	*   improve 优化数据库设置，更新例子中的版本状态，预备升级为v2.2.1 (dev)   
+	*   improve 优化数据库设置，更新例子中的版本状态，预备升级为v2.2.1   
 
 **2014-07-11 20:03:19 +0500** sheyi dell [view commit &bull;](http://github.com/sheyi/higrid/commit/63c7d521c452b41be0bc58125676b0e1c0f67806) 
 
