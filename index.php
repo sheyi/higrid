@@ -77,7 +77,11 @@ $jqgrid_csvdata=higrid_csv_to_array(HIGRID_PATH.'/config/higrid_demo.csv');
 foreach($jqgrid_csvdata as $k=>$x)
 {
 	echo "<tr>";
-	echo "<td>".$x['demo']."</td>";
+	if($x['tag']==1){
+		echo '<td><strong>'.$x['demo'].'</strong><font color=red>New!</font></td>';
+	}else{
+		echo "<td>".$x['demo']."</td>";
+	}
 	echo "<td>".higrid_demo_link($x['page'])."</td>";
 	echo '<td><a href="https://github.com/sheyi/higrid/blob/master/example/'.$x['page'].'.php">源代码</a></td>';
 	echo '<td><a href="https://github.com/sheyi/higrid/edit/master/example/'.$x['page'].'.php">编辑</a/td>';
