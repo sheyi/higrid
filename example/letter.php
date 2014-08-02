@@ -72,7 +72,7 @@ $grid->higridsGO(array(
 $grid->navigator = true;
 
 
-$grid->higridsNO('navigator', array("excel"=>true,"add"=>true,"edit"=>false,"del"=>false,"view"=>true, "refresh"=>true,"search"=>true,"pdf"=>false));
+$grid->higridsNO('navigator', array("excel"=>true,"add"=>true,"edit"=>false,"del"=>false,"view"=>true, "refresh"=>true,"search"=>true,"pdf"=>true));
 
 
 $grid->higridsNO('add',array("width"=>500,"height"=>300,"dataheight"=>"auto",
@@ -83,6 +83,33 @@ $grid->higridsNO('edit', array("width"=>"auto","height"=>"auto","dataheight"=>"a
 
 $grid->higridsNO('edit',array("width"=>500,"height"=>300,"dataheight"=>"auto",
 "closeAfterEdit"=>true,"reloadAfterSubmit"=>true,"editCaption"=>"编辑数据","bSubmit"=>"更新"));
+
+$oper = hgGridcommon::GetParam("oper"); 
+// prevent some executions when not excel export 
+if($oper == "pdf") { 
+    $grid->setPdfOptions(array( 
+        // set the page orientation to landscape 
+        "page_orientation"=>"R", //L
+        // enable header information 
+        "header"=>true, 
+        // set bigger top margin 
+		"font_name_main"=>"stsongstdlight",
+		"font_monospaced"=>"stsongstdlight",
+		"font_name_data"=>"stsongstdlight",
+        "margin_top"=>27, 
+        // set logo image 
+        "header_logo"=>"higrid.png", 
+        // set logo image width 
+        "header_logo_width"=>30, 
+        //header title 
+        "header_title"=>"嗨网pdf导出测试, 打印时间：".date("Y-m-d H:i:s"), 
+        // and a header string to print 
+        "header_string"=>"higridpdf导出"
+        )); 
+} 
+
+$grid->exportfile =date("Ymd_H:i:s").'sheyiexport.xml';
+$grid->pdffile =date("Ymd_H:i:s").'sheyiexport.pdf';
 
 $grid->higridOP('#cd_lettergrid','#cd_letterpager',true, null, null, true,true);
 $connhigrid = null;
