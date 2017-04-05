@@ -4,8 +4,8 @@
 
 
 - 网址：<http://higrid.net/>
-- 文档：<http://higrid.net/docs/code/higridpro-quick-install.md>
-- api：<http://higrid.net/docs/higridapi/>
+- 文档：<http://higrid.net/hi/docs/higridpro-quick-install>
+- api：<http://tool.higrid.net/higridapi/>
 - 在线演示：<http://higrid.higrid.net>
 
 
