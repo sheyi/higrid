@@ -60,7 +60,7 @@ $grid->higridsGO(array(
 // We can put JS from php
 $custom = <<<CUSTOM
 function formatImage(cellValue, options, rowObject) {
-    var imageHtml = "<img src='http://higrid.qiniudn.com/higrid_demo_images/" + cellValue + "' originalValue='" + cellValue + "' />";
+    var imageHtml = "<img src='//cdn.jsdelivr.net/gh/sheyi/img/higrid_demo_images/" + cellValue + "' originalValue='" + cellValue + "' />";
 return imageHtml;
 }
 function unformatImage(cellValue, options, cellObject) {

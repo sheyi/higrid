@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="http://higrid.net/favicon.ico" type="image/x-icon" />
 <!---link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" media="all" charset="utf-8" /--->
-<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -27,7 +27,7 @@
 
 #index-logo {
   text-indent: 245px;
-  background: url(http://higrid.qiniudn.com/higrid-demo-logo.png) no-repeat;
+  background: url(//cdn.jsdelivr.net/gh/sheyi/img/include/assets/higrid-demo-logo.png) no-repeat;
 }
 </style>
 </head>
@@ -153,26 +153,16 @@ echo Markdown(file_get_contents(HIGRID_PATH.'changelog.md'));
     </footer>
 
 <!--javascript-->
-<script src="//lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js"></script>
-<script>!window.jQuery && document.write("<script src=//libs.baidu.com/jquery/1.9.0/jquery.min.js><\/script>")</script>
-
 <!---
 //CDN公共库
 http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs	
 script type="text/javascript" src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script -->
-
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<!---script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script--->
-
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <!--以下是统计代码-->
 <div style="display:none">
-	<!--HIGRID GOOGLE STATS -->
-<!--script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fe800be547df3ec1416d26a49a98b6f44' type='text/javascript'%3E%3C/script%3E"));
-</script>
-	<script src="http://s20.cnzz.com/stat.php?id=3552716&web_id=3552716" language="javascript"></script>
-</div--->
+
+</div>
 
 </body>
 </html>

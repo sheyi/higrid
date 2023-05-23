@@ -1,12 +1,13 @@
 ﻿#higrid嗨网 专业版 
 
-**中文PHP在线图表**, Copyright (C) http://higrid.net   
+**中文PHP在线图表**, Copyright (C) higrid.net   
 
 
-- 网址：<http://higrid.net/>
-- 文档：<http://higrid.net/hi/docs/higridpro-quick-install>
-- api：<http://tool.higrid.net/higridapi/>
-- 在线演示：<http://higrid.higrid.net>
+- 网址：<https://higrid.net/>
+- 文档：<https://higrid.net//posts/higrid_install.html>
+- api：<https://tool.higrid.net/higridapi/>
+- 在线演示：<https://higrid.higrid.net>
+- 本仓库代码已失效，具体代码请访问：<https://higrid.net/page/view/service_higrid>
 
 
 ## 目录结构为:
@@ -56,7 +57,7 @@
     \---scopbin //加密文件
             911006.php
 </pre>
-dos命令：`tree E:\github\github_higrid /f /a >list.txt`
+
 
 ##安装
 
